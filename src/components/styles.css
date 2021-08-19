@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "valofont";
+  src: url("../fonts/valorant.ttf") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  transition: all 200ms ease-in-out;
+}
+body::-webkit-scrollbar {
+  width: 0rem;
+}
+:root {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+nav {
+  width: 8vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: width 200ms ease;
+}
+nav:hover {
+  width: 28vw;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+nav:hover .home-btn {
+  opacity: 1;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  margin-top: 12%;
+  margin-bottom: 12%;
+  list-style-type: none;
+}
+.hometag {
+  font-family: "valofont";
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 7vw;
+  text-shadow: 2px 2px #000000;
+  padding-top: 35vh;
+  padding-left: 10vw;
+}
+.bottomtext {
+  font-family: "valofont";
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 3vw;
+  text-shadow: 2px 2px #000000;
+  margin-left: 10vw;
+  margin-top: 5%;
+}
+.homepage {
+  background-image: url("../images/back-img.jpg");
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.gun-btn:hover {
+  background-color: brown;
+  color: antiquewhite;
+}
+.home-btn {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.home-btn:hover {
+  letter-spacing: 2px;
+  margin-left: 7%;
+  color: rgba(255, 194, 194, 0.4);
+}
+.hover-text {
+  font-size: 28px;
+  color: white;
+  margin-left: 25%;
+}
+.map {
+  position: absolute;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.mapName {
+  position: fixed;
+  margin-top: 50vh;
+  margin-left: 45vw;
+  font-size: 7vw;
+  color: rgba(255, 255, 255, 0.98);
+  text-shadow: black 1px 1px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -7px;
+  opacity: 1;
+  transform: translateX(-50%);
+}
+.mapNameTmp {
+  color: black;
+  position: fixed;
+  margin-top: 50vh;
+  margin-left: 45vw;
+  font-size: 7vw;
+  color: rgba(0, 0, 0, 0.9);
+  text-shadow: black 1px 1px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -5px;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.black {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.pitch {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0);
+  font-size: 3vw;
+  padding-left: 45vw;
+  padding-top: 50vh;
+  color: white;
+}
+.mapName:hover {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: context-menu;
+  letter-spacing: -5px;
+}
+.nextButton {
+  position: fixed;
+  margin-left: 95vw;
+  font-family: "Poppins", sans-serif;
+  min-width: 5vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 1vw;
+  color: white;
+  min-height: 100vh;
+}
+.nextButton:hover {
+  margin-left: 92vw;
+  min-width: 8vw;
+  font-size: 2vw;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media only screen and (max-width: 700px) {
+  nav:hover {
+    width: 80vw;
+    background-color: rgba(0, 0, 0);
+  }
+  nav {
+    width: 20vw;
+  }
+  .hover-text {
+    font-size: 15px;
+  }
+  .hometag {
+    padding-left: 30%;
+    font-size: 35px;
+  }
+  .bottomtext {
+    margin-left: 30%;
+  }
+  .nextButton {
+    margin-left: 0vw;
+    position: fixed;
+    margin-top: 90vh;
+    font-family: "Poppins", sans-serif;
+    min-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 6vw;
+    color: white;
+    min-height: 10vh;
+  }
+  .nextButton:hover {
+    margin-left: 0vw;
+    position: fixed;
+    margin-top: 90vh;
+    font-family: "Poppins", sans-serif;
+    min-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 6vw;
+    color: white;
+    min-height: 10vh;
+  }
+  .mapName {
+    position: fixed;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    font-size: 8vw;
+    color: rgba(255, 255, 255, 0.98);
+    text-shadow: black 1px 1px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    opacity: 1;
+  }
+  .mapNameTmp {
+    color: black;
+    position: fixed;
+    margin-top: 50vh;
+    margin-left: 50vw;
+    font-size: 8vw;
+    color: rgba(0, 0, 0, 0.9);
+    text-shadow: black 1px 1px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
